@@ -34,7 +34,7 @@ resource "docker_image" "keycloak_image" {
 }
 
 resource "docker_container" "keycloak" {
-  name = "keycloat_live"
+  name = "keycloak_live"
   image = docker_image.keycloak_image.image_id
   network_mode = docker_network.kcnetwork.name
   ports {

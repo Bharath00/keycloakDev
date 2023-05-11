@@ -9,7 +9,7 @@ EXPOSE 8080
 ENV KEYCLOAK_ADMIN=Root
 ENV KEYCLOAK_ADMIN_PASSWORD=sheep
 ENV KC_DB=mysql
-ENV KC_DB_URL=jdbc:mysql://host.docker.internal:3306/Keycloakdb
+ENV KC_DB_URL=jdbc:mysql://10.0.0.4:3306/Keycloakdb
 ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=sheep
-ENV KC_HOSTNAME=localhost
+ENV KC_HOSTNAME=http://20.84.88.33
