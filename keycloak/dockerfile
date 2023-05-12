@@ -13,8 +13,7 @@ ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=sheep
 
 #Prod
-ENV KC_HOSTNAME=http://20.84.88.33 
-ENV KC_PROXY=edge
-ENV KC_HTTP_ENABLED = true
-ENV KC_DB_URL=jdbc:mysql://10.0.0.4:3306/Keycloakdb
-ENV KC_HOSTNAME_STRICT=false
+ENV KC_HOSTNAME=localhost
+ENV KC_DB_URL=jdbc:mysql://host.docker.internal:3306/Keycloakdb
+#ENV KC_HOSTNAME_STRICT=false
+#ENV KC_PROXY=edge
